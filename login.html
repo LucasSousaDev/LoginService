@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body, html { /* Aplicado a body e html para garantir 100% de altura */
+            margin: 0;
+            padding: 0;
+            height: 100%; /* Garante que o fundo ocupe toda a tela */
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .fundo {
+            background: linear-gradient(45deg, #000, #434343);
+            height: 100%; /* Usando 100% da altura do pai (body/html) */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            background-color: rgba(0, 0, 0, 0.6);
+            box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+            color: white;
+            height: 400px;
+            width: 400px;
+            padding: 30px;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .login-title {
+            margin-bottom: 30px;
+            margin-top: 0;
+        }
+
+        .form-group {
+            width: 100%;
+            margin-bottom: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .form-group:first-of-type {
+            margin-top: 0;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 20px;
+            margin-bottom: 5px;
+            text-align: left; /* Alinha o texto ao início do input */
+            width: 100%; /* Garante que o alinhamento seja relativo ao container */
+            max-width: 300px; /* Define o mesmo limite do input */
+        }
+
+        .form-group input {
+            width: 100%;
+            max-width: 300px;
+            height: 40px;
+            border-radius: 5px;
+            border: none;
+            padding: 0 10px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        .login-button {
+            background-color: white;
+            color: black;
+            width: 100%;
+            max-width: 300px;
+            height: 40px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.5s;
+            font-size: 17px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .login-button:hover {
+            background-color: #000000;
+            color: rgb(255, 255, 255);
+        }
+
+        .register-link {
+            margin-top: 20px;
+            color: white;
+            text-decoration: none;
+        }
+
+        .register-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="fundo">
+        <div class="container">
+            <h1 class="login-title">LOGIN</h1>
+            <div class="form-group">
+                <label for="username">E-mail</label>
+                <input type="email" id="username" placeholder="Digite seu e-mail" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Senha</label>
+                <input type="password" id="password" placeholder="Digite sua senha" required>
+            </div>
+            <button class="login-button">LOGIN</button>
+            <a href="register.html" class="register-link">Não tem uma conta? Registre-se</a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

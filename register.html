@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .fundo {
+            background: linear-gradient(45deg, #000, #434343);
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            background-color: rgba(0, 0, 0, 0.6);
+            box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+            color: white;
+            height: 600px;
+            width: 400px;
+            padding: 30px;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .form-group {
+            width: 100%;
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 20px;
+            margin-bottom: 5px;
+            text-align: left;
+            width: 100%;
+            max-width: 300px;
+        }
+
+        .form-group input {
+            width: 100%;
+            max-width: 300px;
+            height: 40px;
+            border-radius: 5px;
+            border: none;
+            padding: 0 10px;
+            box-sizing: border-box;
+        }
+
+        .register-button {
+            background-color: white;
+            color: black;
+            width: 100%;
+            max-width: 300px;
+            height: 40px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.5s;
+            font-size: 17px;
+            text-align: center;
+            margin-top: 5px;
+        }
+
+        .register-button:hover {
+            background-color: #000000;
+            color: rgb(255, 255, 255);
+        }
+
+        .login-link {
+            margin-top: 15px;
+            color: white;
+            text-decoration: none;
+        }
+
+        .login-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="fundo">
+        <div class="container">
+            <h1 class="register-title">REGISTRO</h1>
+            <div class="form-group">
+                <label for="username">Usuário</label>
+                <input type="text" id="username" placeholder="Digite seu usuário" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" placeholder="Digite seu e-mail" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Senha</label>
+                <input type="password" id="password" placeholder="Digite sua senha" required>
+            </div>
+            <div class="form-group">
+                <label for="confirm-password">Confirmar Senha</label>
+                <input type="password" id="confirm-password" placeholder="Confirme sua senha" required>
+            </div>
+            <button class="register-button" onclick="register()">REGISTRAR</button>
+            <a href="login.html" class="login-link">Já tem uma conta? Faça login</a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
