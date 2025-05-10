@@ -28,7 +28,7 @@ Um sistema de login completo com frontend em HTML, CSS e JavaScript puro.
 
 1. Clone o repositório:
 ```bash
-git clone https://github.com/seu-usuario/nome-do-repo.git
+git clone https://github.com/LucasSousaDev/LoginService.git
 ```
 
 2. Configure o arquivo `.env` com suas variáveis de ambiente:
